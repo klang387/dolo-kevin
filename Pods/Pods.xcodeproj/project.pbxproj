@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02576BED1EFAC50B4501F0B8A2B99844 /* PhotoSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DAAEE05BBC85473D4CDA7CB0EB6124 /* PhotoSaver.swift */; };
+		03B87D0D4D3A8316F1EE2916DEA3692F /* FSHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0116E645D979B7819C6CE1F2F1168D /* FSHelpers.swift */; };
+		057CB8C22FA33F6E0B3C7EC424784210 /* FSAlbumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78C4C07430865E681EBE0C1CAE4B5BD0 /* FSAlbumView.xib */; };
+		05AAEF9665C80C8E18CC71CFE56419BD /* FSAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D180A4D50ECC7167FA857E4BED1DE /* FSAlbumViewCell.swift */; };
+		0AA78DEE0A7A180603CD244230094D97 /* SteviaLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0744224BEF35D640B2963999F901BA4E /* SteviaLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B3E6E8B54937C94F7C0863688C1BA02 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 069F7661CEDCA77CED7C7ABB65B48CFB /* en.lproj */; };
+		0F8342D6FECB85E7990A2A7C39D0E31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C3B2D3CACDBCC723DE128EE67FD943 /* Assets.xcassets */; };
+		174160FE6B1D9660246EEDFF7431760E /* PickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5887ABC721D58880B3734E3642257 /* PickerVC.swift */; };
+		17D5CEB5E5F8B59B00738370C2791E95 /* YPAlbumFolderSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD329FBDDC9FA0EAB6E6F11AAE7FDFB /* YPAlbumFolderSelectionVC.swift */; };
+		191D1150CD47DEC68EB0B6C38F3FCE76 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CEC471804D3631332604E6BC01869 /* Filter.swift */; };
+		1FC7B9157448AFAD662DF60142E3D709 /* Stevia+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD45C828B2D94BDC429352D3EA00ECD /* Stevia+Center.swift */; };
+		22214420215A89527E0B5275962E6432 /* Stevia+FlexibleMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9427764C46C1824AD4AF872E1576656F /* Stevia+FlexibleMargin.swift */; };
+		25B9626ED2CD11614F1230D3BF7C963F /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 10C581ED565BFFEF25D23B8D76E64551 /* es.lproj */; };
+		27ACD2CFDFB4DBFF294DD7FA742C727C /* FSAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF8FF965115CEE73DB9328649000C3 /* FSAlbumView.swift */; };
+		2B62242E82FF78E52C3A52BF331DEF2A /* Stevia+Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD7894415CF3E055E96C226C0120F57 /* Stevia+Stacks.swift */; };
+		31FE5135BE7024095B42C04C4219B113 /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354CE4C173148601604AC4DFC1CD6625 /* Stevia.framework */; };
+		3716B43D37996A1CEFBF04F17AAA1291 /* YPImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F77748F93C7369585B43C717AC074D1 /* YPImagePicker.swift */; };
+		3795DF87DA3707F59EC76FBB20CAAE23 /* FSCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641A55117C0D3197B1912ED51ACF085 /* FSCameraVC.swift */; };
+		3BD18179F25E7091BCF623167C681ED6 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 938280FBC30127FAD31E89C81D2F550E /* fr.lproj */; };
+		3C31F0EE69CAA9AF632750E238F2B853 /* Stevia+DoubleDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538C389C8194F9E0663F941FD7E2E4C /* Stevia+DoubleDash.swift */; };
+		440A7F3B6BC4BEBC1BC8007836FC685A /* Stevia+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB607C2DA8F23B09A2ADB9FB679CB3A2 /* Stevia+Fill.swift */; };
+		44D99966BFD34F42F57EDF4B763CD367 /* Stevia+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1B7DB60F66BD0211E1583D313298D6 /* Stevia+Percentage.swift */; };
+		5D2E4EDEDF46F87FC8A9DEDBB3A53ED7 /* Stevia+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A2194ACB3D576B18EAE91AA249CD17 /* Stevia+Size.swift */; };
+		5F3B206E8761D0D6EEC43FE78B671C89 /* ImageCropViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB7ACD4F0ACAAE8C84B20B416A699B /* ImageCropViewContainer.swift */; };
+		5F5AA9148FB1AB674E43200C42C921E5 /* Stevia+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6738D8B5A6A069ADE133D133A1B480 /* Stevia+Hierarchy.swift */; };
+		621CBDDE62CFDABB284F8F236871549F /* YPImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A56EBDB0750EC1F4A8F3078DB570879 /* YPImagePicker-dummy.m */; };
+		6795D17C6D39F2ACDB75964225449108 /* FSBottomPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141EDEA7C4E5FC54BA2191F40C3F213 /* FSBottomPager.swift */; };
+		6A14635F3AAD0B8B780B29D43A8BA4E7 /* FSImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8929582B342D17506E9F06A2627B7 /* FSImageCropView.swift */; };
+		6E61B9AB3EE202CCE6C05162C5D26794 /* Stevia+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214A76FADE008B83C4B54B6F723D1427 /* Stevia+Position.swift */; };
+		71EA4EB3D70AB2AB8D680475AB5A290D /* Stevia+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38FB9D8A13AB28E0A5974916C20908 /* Stevia+GetConstraint.swift */; };
+		7C235F60FDEE6C8FEB58C5DAA7BD82B6 /* FSVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C488B100B48177BB97F9AA0CB2D1A9C7 /* FSVideoVC.swift */; };
+		7D8E986DAA8188CD5783B0E89F9C0105 /* PHAssetCollection+Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767406137B1F8499F6D078E75FF62F8A /* PHAssetCollection+Album.swift */; };
+		8A6B7E89D045AAFE61A37A6B0B646988 /* Stevia+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B846903371D974B25F4EDB0A6DA0D /* Stevia+Style.swift */; };
+		9738C00FB1E7BED87EFAA31FB3E8AAF6 /* FSConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B612860892B41AE4C55F84E72A186578 /* FSConfiguration.swift */; };
+		9B1C49E67378B1E1874BC021B76B7DC6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E02F8EDA062BA762A210825FD6DEB2 /* Album.swift */; };
+		A05E17F279AC0D038BF18C6B5FE8ACF4 /* SteviaLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B10810C990E205427435450EA215D /* SteviaLayout-dummy.m */; };
+		A5E3C2819179BD0985C0937D3DCA7026 /* Stevia+Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393096C1C7E17F48171B25CCDA20CC7D /* Stevia+Tap.swift */; };
+		A8E38C61E8C550BB6E19A0CE77089960 /* Stevia+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86EC738715C9531FA43ABE6F7C5D07 /* Stevia+Content.swift */; };
+		AA54E973C517504D5AD373D10E79FCDE /* Stevia+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0841DCA64760AC674DA10416A4FE50 /* Stevia+Alignment.swift */; };
+		AE8C91BB70AFC95005F96CCC7EEBF332 /* Stevia+Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7280807E8428811B9E5C17C5B948414 /* Stevia+Equation.swift */; };
+		B054CBABEEC89F69DCC09768A8D48BB0 /* YPAlbumFolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C1BE1AF18F5C5E94F3F0BBD8ED5C2F /* YPAlbumFolderCell.swift */; };
+		B192694E5E7DA214CD2F1C90A919DDEC /* YPImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B352C7E3F1583F7377BCE20E33CAC1E /* YPImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7318AE11EFFAE69AC42E52AB0E96BB9 /* FiltersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD533A8622BABDE1880114163B68AC /* FiltersVC.swift */; };
+		B7FA7173A44D685FF16698CBB867713F /* Pods-DoloChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA4A59EA385AABACE2E3EF1E7E25CFC /* Pods-DoloChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAF1390AFCA986CD3E1AE1AD4E0B6D6C /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A129F453633ED5FE30265BC9843A55AC /* FiltersView.swift */; };
+		C27DECA4C33D6666AD604FA27479B6EC /* FSAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BD67CDCCF1F56F2F979A89D803B6F /* FSAlbumVC.swift */; };
+		C28D6383BA4C9D0C01C59B77BE339C30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EB92EDC1C0A016EA155DA05C96A2D5 /* Foundation.framework */; };
+		C3F599ABC4798DB14416EEF0F6C498A2 /* Stevia+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B617FD49975AB42D30E708C96FE6CD /* Stevia+Constraints.swift */; };
+		CA19448E494F96FAF05BCBB64B3687CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EB92EDC1C0A016EA155DA05C96A2D5 /* Foundation.framework */; };
+		D020643E8CB325C1D37CC444D4AAD394 /* FSCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513BF1B518B85906456D4D5B66679178 /* FSCameraView.swift */; };
+		D6BB96CFA27D30D14446DCF9B3B0801A /* YPAlbumFolderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495DD27525932E7CBE46B176413258F /* YPAlbumFolderSelectionView.swift */; };
+		D98AFFA0147A943D27BE89D0C09013C2 /* Stevia+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85400FC260FF3437C9436AAAB327CD3B /* Stevia+Operators.swift */; };
+		DEF3F2289CE605C2094143975FB144C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EB92EDC1C0A016EA155DA05C96A2D5 /* Foundation.framework */; };
+		E41786920BFB521BF1190F63531E9C37 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F65E56C95C4AF9EC9CF5FAE279F07A /* FilterCollectionViewCell.swift */; };
+		E6B48B127AF9B8B7A3182881BDFD96F6 /* FSGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0935400ED07E75C023C32856E00C96 /* FSGridView.swift */; };
+		ED664FEA0AFCB9DD8E689D48D652ABE4 /* FilterPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07392D913DC99847CB3DD4B23E84639A /* FilterPreview.swift */; };
+		FC5BE4399FBC371AE96621374446BF24 /* Stevia+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79385E4EC35A8BE856960671DCDEFE81 /* Stevia+Notifications.swift */; };
+		FE58437C644BE5FF86A31A68339D11ED /* Pods-DoloChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272D8403800C8B20DD022157A45D2E08 /* Pods-DoloChallenge-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		501B7005EF0095A5D631F6C05F3407E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364E212578137234ECA7F961815D5105;
+			remoteInfo = SteviaLayout;
+		};
+		9BDFFD6A338355D52AFEB42241382DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364E212578137234ECA7F961815D5105;
+			remoteInfo = SteviaLayout;
+		};
+		C31C371087C2F1B129E88CDFB3ACE254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44CEEA27D92D000528A521287B7E456;
+			remoteInfo = YPImagePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C5887ABC721D58880B3734E3642257 /* PickerVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerVC.swift; path = Source/PickerVC.swift; sourceTree = "<group>"; };
+		069F7661CEDCA77CED7C7ABB65B48CFB /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = Resources/en.lproj; sourceTree = "<group>"; };
+		07392D913DC99847CB3DD4B23E84639A /* FilterPreview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterPreview.swift; path = Source/Filters/FilterPreview.swift; sourceTree = "<group>"; };
+		0744224BEF35D640B2963999F901BA4E /* SteviaLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-umbrella.h"; sourceTree = "<group>"; };
+		0A56EBDB0750EC1F4A8F3078DB570879 /* YPImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YPImagePicker-dummy.m"; sourceTree = "<group>"; };
+		0E4732BDD7844901B7FF76FEA9BBB63F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C581ED565BFFEF25D23B8D76E64551 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = Resources/es.lproj; sourceTree = "<group>"; };
+		10F65E56C95C4AF9EC9CF5FAE279F07A /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterCollectionViewCell.swift; path = Source/Filters/FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		13AF8FF965115CEE73DB9328649000C3 /* FSAlbumView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSAlbumView.swift; path = Source/Album/FSAlbumView.swift; sourceTree = "<group>"; };
+		155E74AB88FC6FC56D4FF4E9A4D93051 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B1B7DB60F66BD0211E1583D313298D6 /* Stevia+Percentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Percentage.swift"; path = "Source/Stevia+Percentage.swift"; sourceTree = "<group>"; };
+		1FB15B380FED6AFB212CE0FF2229E4F3 /* YPImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YPImagePicker.modulemap; sourceTree = "<group>"; };
+		214A76FADE008B83C4B54B6F723D1427 /* Stevia+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Position.swift"; path = "Source/Stevia+Position.swift"; sourceTree = "<group>"; };
+		24DB7ACD4F0ACAAE8C84B20B416A699B /* ImageCropViewContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCropViewContainer.swift; path = Source/Album/ImageCropViewContainer.swift; sourceTree = "<group>"; };
+		25E02F8EDA062BA762A210825FD6DEB2 /* Album.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Album.swift; path = Source/Album/Album.swift; sourceTree = "<group>"; };
+		25FD533A8622BABDE1880114163B68AC /* FiltersVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FiltersVC.swift; path = Source/Filters/FiltersVC.swift; sourceTree = "<group>"; };
+		272D8403800C8B20DD022157A45D2E08 /* Pods-DoloChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DoloChallenge-dummy.m"; sourceTree = "<group>"; };
+		280D180A4D50ECC7167FA857E4BED1DE /* FSAlbumViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSAlbumViewCell.swift; path = Source/Album/FSAlbumViewCell.swift; sourceTree = "<group>"; };
+		2E0B1819C7210091AFBA01612DD5E7BF /* Pods-DoloChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoloChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		354CE4C173148601604AC4DFC1CD6625 /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stevia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DAAEE05BBC85473D4CDA7CB0EB6124 /* PhotoSaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoSaver.swift; path = Source/PhotoSaver.swift; sourceTree = "<group>"; };
+		36A2194ACB3D576B18EAE91AA249CD17 /* Stevia+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Size.swift"; path = "Source/Stevia+Size.swift"; sourceTree = "<group>"; };
+		393096C1C7E17F48171B25CCDA20CC7D /* Stevia+Tap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Tap.swift"; path = "Source/Stevia+Tap.swift"; sourceTree = "<group>"; };
+		3BF9561996C9F99A916ADCD105FBDF6A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D274F0A033D74F6ECE25E93282D0EF8 /* Pods-DoloChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoloChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F77748F93C7369585B43C717AC074D1 /* YPImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YPImagePicker.swift; path = Source/YPImagePicker.swift; sourceTree = "<group>"; };
+		513BF1B518B85906456D4D5B66679178 /* FSCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSCameraView.swift; path = Source/Camera/FSCameraView.swift; sourceTree = "<group>"; };
+		51671EFD027AC5F2A9107792B61C9557 /* Pods-DoloChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoloChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		5A0116E645D979B7819C6CE1F2F1168D /* FSHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSHelpers.swift; path = Source/FSHelpers.swift; sourceTree = "<group>"; };
+		5B352C7E3F1583F7377BCE20E33CAC1E /* YPImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YPImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		5D38FB9D8A13AB28E0A5974916C20908 /* Stevia+GetConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+GetConstraint.swift"; path = "Source/Stevia+GetConstraint.swift"; sourceTree = "<group>"; };
+		62241E602D9D30ED1CC6F22FBE1DDDE4 /* SteviaLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SteviaLayout.xcconfig; sourceTree = "<group>"; };
+		75099A40164C201ABF2AB179FE677EAF /* Pods_DoloChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoloChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B617FD49975AB42D30E708C96FE6CD /* Stevia+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Constraints.swift"; path = "Source/Stevia+Constraints.swift"; sourceTree = "<group>"; };
+		76045E272683872446108984A860CF4F /* YPImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YPImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		767406137B1F8499F6D078E75FF62F8A /* PHAssetCollection+Album.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PHAssetCollection+Album.swift"; path = "Source/Album/PHAssetCollection+Album.swift"; sourceTree = "<group>"; };
+		78C4C07430865E681EBE0C1CAE4B5BD0 /* FSAlbumView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSAlbumView.xib; path = Source/Album/FSAlbumView.xib; sourceTree = "<group>"; };
+		79385E4EC35A8BE856960671DCDEFE81 /* Stevia+Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Notifications.swift"; path = "Source/Stevia+Notifications.swift"; sourceTree = "<group>"; };
+		83957AC9A158A5503FF66145EEA66795 /* Pods-DoloChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoloChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		85400FC260FF3437C9436AAAB327CD3B /* Stevia+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Operators.swift"; path = "Source/Stevia+Operators.swift"; sourceTree = "<group>"; };
+		8641A55117C0D3197B1912ED51ACF085 /* FSCameraVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSCameraVC.swift; path = Source/Camera/FSCameraVC.swift; sourceTree = "<group>"; };
+		888B846903371D974B25F4EDB0A6DA0D /* Stevia+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Style.swift"; path = "Source/Stevia+Style.swift"; sourceTree = "<group>"; };
+		8AD7894415CF3E055E96C226C0120F57 /* Stevia+Stacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Stacks.swift"; path = "Source/Stevia+Stacks.swift"; sourceTree = "<group>"; };
+		8B4CEC471804D3631332604E6BC01869 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Source/Filters/Filter.swift; sourceTree = "<group>"; };
+		8C5D13589B6AEE9C7EAC534E3E317ED7 /* Pods-DoloChallenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoloChallenge-resources.sh"; sourceTree = "<group>"; };
+		8D6738D8B5A6A069ADE133D133A1B480 /* Stevia+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Hierarchy.swift"; path = "Source/Stevia+Hierarchy.swift"; sourceTree = "<group>"; };
+		8FEB469984264EDD9A4B0E6E7FA4F354 /* SteviaLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SteviaLayout.modulemap; sourceTree = "<group>"; };
+		8FF8929582B342D17506E9F06A2627B7 /* FSImageCropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSImageCropView.swift; path = Source/Album/FSImageCropView.swift; sourceTree = "<group>"; };
+		938280FBC30127FAD31E89C81D2F550E /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = Resources/fr.lproj; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9427764C46C1824AD4AF872E1576656F /* Stevia+FlexibleMargin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+FlexibleMargin.swift"; path = "Source/Stevia+FlexibleMargin.swift"; sourceTree = "<group>"; };
+		9BD45C828B2D94BDC429352D3EA00ECD /* Stevia+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Center.swift"; path = "Source/Stevia+Center.swift"; sourceTree = "<group>"; };
+		A129F453633ED5FE30265BC9843A55AC /* FiltersView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FiltersView.swift; path = Source/Filters/FiltersView.swift; sourceTree = "<group>"; };
+		A7280807E8428811B9E5C17C5B948414 /* Stevia+Equation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Equation.swift"; path = "Source/Stevia+Equation.swift"; sourceTree = "<group>"; };
+		AF86EC738715C9531FA43ABE6F7C5D07 /* Stevia+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Content.swift"; path = "Source/Stevia+Content.swift"; sourceTree = "<group>"; };
+		B538C389C8194F9E0663F941FD7E2E4C /* Stevia+DoubleDash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+DoubleDash.swift"; path = "Source/Stevia+DoubleDash.swift"; sourceTree = "<group>"; };
+		B612860892B41AE4C55F84E72A186578 /* FSConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSConfiguration.swift; path = Source/FSConfiguration.swift; sourceTree = "<group>"; };
+		B8EB92EDC1C0A016EA155DA05C96A2D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BA7B10810C990E205427435450EA215D /* SteviaLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SteviaLayout-dummy.m"; sourceTree = "<group>"; };
+		BB5C75F3D233D27DC3E06931C97D3F2D /* SteviaLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-prefix.pch"; sourceTree = "<group>"; };
+		BE0935400ED07E75C023C32856E00C96 /* FSGridView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSGridView.swift; path = Source/Album/FSGridView.swift; sourceTree = "<group>"; };
+		C007DA5DAD4645C46430B6CB930D398F /* Pods-DoloChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DoloChallenge.modulemap"; sourceTree = "<group>"; };
+		C488B100B48177BB97F9AA0CB2D1A9C7 /* FSVideoVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSVideoVC.swift; path = Source/Video/FSVideoVC.swift; sourceTree = "<group>"; };
+		C495DD27525932E7CBE46B176413258F /* YPAlbumFolderSelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YPAlbumFolderSelectionView.swift; path = Source/Album/YPAlbumFolderSelectionView.swift; sourceTree = "<group>"; };
+		D141EDEA7C4E5FC54BA2191F40C3F213 /* FSBottomPager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSBottomPager.swift; path = Source/FSBottomPager.swift; sourceTree = "<group>"; };
+		DF190E60E09584D8B3436052A74663BA /* YPImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YPImagePicker.xcconfig; sourceTree = "<group>"; };
+		E5C1BE1AF18F5C5E94F3F0BBD8ED5C2F /* YPAlbumFolderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YPAlbumFolderCell.swift; path = Source/Album/YPAlbumFolderCell.swift; sourceTree = "<group>"; };
+		E5C3B2D3CACDBCC723DE128EE67FD943 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		EBA4A59EA385AABACE2E3EF1E7E25CFC /* Pods-DoloChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DoloChallenge-umbrella.h"; sourceTree = "<group>"; };
+		EBE1DDA0EF5C836898B87AA6EBB00504 /* Pods-DoloChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoloChallenge-frameworks.sh"; sourceTree = "<group>"; };
+		EC0841DCA64760AC674DA10416A4FE50 /* Stevia+Alignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Alignment.swift"; path = "Source/Stevia+Alignment.swift"; sourceTree = "<group>"; };
+		EE1BD67CDCCF1F56F2F979A89D803B6F /* FSAlbumVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSAlbumVC.swift; path = Source/Album/FSAlbumVC.swift; sourceTree = "<group>"; };
+		EF36569A6EAF811966A05210FEA1C41B /* YPImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YPImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		EFD329FBDDC9FA0EAB6E6F11AAE7FDFB /* YPAlbumFolderSelectionVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YPAlbumFolderSelectionVC.swift; path = Source/Album/YPAlbumFolderSelectionVC.swift; sourceTree = "<group>"; };
+		FB607C2DA8F23B09A2ADB9FB679CB3A2 /* Stevia+Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Fill.swift"; path = "Source/Stevia+Fill.swift"; sourceTree = "<group>"; };
+		FEF1089E7E43B98288839757FED92E17 /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stevia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33A4591E3FE9D647CC39DF60462E7CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28D6383BA4C9D0C01C59B77BE339C30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7C79F533E788AF3C75FC1AD4D8C6A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF3F2289CE605C2094143975FB144C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31FF9957D1BCE82DFC8C99E21CB536F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA19448E494F96FAF05BCBB64B3687CC /* Foundation.framework in Frameworks */,
+				31FE5135BE7024095B42C04C4219B113 /* Stevia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B9DB88CB1CD580D12CB9A8A8756040A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75099A40164C201ABF2AB179FE677EAF /* Pods_DoloChallenge.framework */,
+				FEF1089E7E43B98288839757FED92E17 /* Stevia.framework */,
+				76045E272683872446108984A860CF4F /* YPImagePicker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		371D960913A92E40499C7B8330F39CF3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B9F75F43C4648D286B6EB49212B2FD /* Pods-DoloChallenge */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		53A2F727EC7A0AA1086C19F5C0B499D2 /* SteviaLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EC0841DCA64760AC674DA10416A4FE50 /* Stevia+Alignment.swift */,
+				9BD45C828B2D94BDC429352D3EA00ECD /* Stevia+Center.swift */,
+				75B617FD49975AB42D30E708C96FE6CD /* Stevia+Constraints.swift */,
+				AF86EC738715C9531FA43ABE6F7C5D07 /* Stevia+Content.swift */,
+				B538C389C8194F9E0663F941FD7E2E4C /* Stevia+DoubleDash.swift */,
+				A7280807E8428811B9E5C17C5B948414 /* Stevia+Equation.swift */,
+				FB607C2DA8F23B09A2ADB9FB679CB3A2 /* Stevia+Fill.swift */,
+				9427764C46C1824AD4AF872E1576656F /* Stevia+FlexibleMargin.swift */,
+				5D38FB9D8A13AB28E0A5974916C20908 /* Stevia+GetConstraint.swift */,
+				8D6738D8B5A6A069ADE133D133A1B480 /* Stevia+Hierarchy.swift */,
+				79385E4EC35A8BE856960671DCDEFE81 /* Stevia+Notifications.swift */,
+				85400FC260FF3437C9436AAAB327CD3B /* Stevia+Operators.swift */,
+				1B1B7DB60F66BD0211E1583D313298D6 /* Stevia+Percentage.swift */,
+				214A76FADE008B83C4B54B6F723D1427 /* Stevia+Position.swift */,
+				36A2194ACB3D576B18EAE91AA249CD17 /* Stevia+Size.swift */,
+				8AD7894415CF3E055E96C226C0120F57 /* Stevia+Stacks.swift */,
+				888B846903371D974B25F4EDB0A6DA0D /* Stevia+Style.swift */,
+				393096C1C7E17F48171B25CCDA20CC7D /* Stevia+Tap.swift */,
+				B065BE379CE338CE8DD96466862D5EE1 /* Support Files */,
+			);
+			path = SteviaLayout;
+			sourceTree = "<group>";
+		};
+		58C510AB9ACDF10906BCADCBF81B955D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				155E74AB88FC6FC56D4FF4E9A4D93051 /* Info.plist */,
+				1FB15B380FED6AFB212CE0FF2229E4F3 /* YPImagePicker.modulemap */,
+				DF190E60E09584D8B3436052A74663BA /* YPImagePicker.xcconfig */,
+				0A56EBDB0750EC1F4A8F3078DB570879 /* YPImagePicker-dummy.m */,
+				EF36569A6EAF811966A05210FEA1C41B /* YPImagePicker-prefix.pch */,
+				5B352C7E3F1583F7377BCE20E33CAC1E /* YPImagePicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YPImagePicker";
+			sourceTree = "<group>";
+		};
+		6A444EC8FA84A2E06E3B55DF6114E0ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5C3B2D3CACDBCC723DE128EE67FD943 /* Assets.xcassets */,
+				069F7661CEDCA77CED7C7ABB65B48CFB /* en.lproj */,
+				10C581ED565BFFEF25D23B8D76E64551 /* es.lproj */,
+				938280FBC30127FAD31E89C81D2F550E /* fr.lproj */,
+				78C4C07430865E681EBE0C1CAE4B5BD0 /* FSAlbumView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FD562834837516C1300516BCDFE81A5A /* Frameworks */,
+				B00A60E5F3CEA5A82341551420C8E4AA /* Pods */,
+				2B9DB88CB1CD580D12CB9A8A8756040A /* Products */,
+				371D960913A92E40499C7B8330F39CF3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		806725CE2F05615D88DC5711FC47A22C /* YPImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				25E02F8EDA062BA762A210825FD6DEB2 /* Album.swift */,
+				8B4CEC471804D3631332604E6BC01869 /* Filter.swift */,
+				10F65E56C95C4AF9EC9CF5FAE279F07A /* FilterCollectionViewCell.swift */,
+				07392D913DC99847CB3DD4B23E84639A /* FilterPreview.swift */,
+				25FD533A8622BABDE1880114163B68AC /* FiltersVC.swift */,
+				A129F453633ED5FE30265BC9843A55AC /* FiltersView.swift */,
+				EE1BD67CDCCF1F56F2F979A89D803B6F /* FSAlbumVC.swift */,
+				13AF8FF965115CEE73DB9328649000C3 /* FSAlbumView.swift */,
+				280D180A4D50ECC7167FA857E4BED1DE /* FSAlbumViewCell.swift */,
+				D141EDEA7C4E5FC54BA2191F40C3F213 /* FSBottomPager.swift */,
+				8641A55117C0D3197B1912ED51ACF085 /* FSCameraVC.swift */,
+				513BF1B518B85906456D4D5B66679178 /* FSCameraView.swift */,
+				B612860892B41AE4C55F84E72A186578 /* FSConfiguration.swift */,
+				BE0935400ED07E75C023C32856E00C96 /* FSGridView.swift */,
+				5A0116E645D979B7819C6CE1F2F1168D /* FSHelpers.swift */,
+				8FF8929582B342D17506E9F06A2627B7 /* FSImageCropView.swift */,
+				C488B100B48177BB97F9AA0CB2D1A9C7 /* FSVideoVC.swift */,
+				24DB7ACD4F0ACAAE8C84B20B416A699B /* ImageCropViewContainer.swift */,
+				767406137B1F8499F6D078E75FF62F8A /* PHAssetCollection+Album.swift */,
+				35DAAEE05BBC85473D4CDA7CB0EB6124 /* PhotoSaver.swift */,
+				01C5887ABC721D58880B3734E3642257 /* PickerVC.swift */,
+				E5C1BE1AF18F5C5E94F3F0BBD8ED5C2F /* YPAlbumFolderCell.swift */,
+				EFD329FBDDC9FA0EAB6E6F11AAE7FDFB /* YPAlbumFolderSelectionVC.swift */,
+				C495DD27525932E7CBE46B176413258F /* YPAlbumFolderSelectionView.swift */,
+				4F77748F93C7369585B43C717AC074D1 /* YPImagePicker.swift */,
+				6A444EC8FA84A2E06E3B55DF6114E0ED /* Resources */,
+				58C510AB9ACDF10906BCADCBF81B955D /* Support Files */,
+			);
+			path = YPImagePicker;
+			sourceTree = "<group>";
+		};
+		B00A60E5F3CEA5A82341551420C8E4AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53A2F727EC7A0AA1086C19F5C0B499D2 /* SteviaLayout */,
+				806725CE2F05615D88DC5711FC47A22C /* YPImagePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B065BE379CE338CE8DD96466862D5EE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BF9561996C9F99A916ADCD105FBDF6A /* Info.plist */,
+				8FEB469984264EDD9A4B0E6E7FA4F354 /* SteviaLayout.modulemap */,
+				62241E602D9D30ED1CC6F22FBE1DDDE4 /* SteviaLayout.xcconfig */,
+				BA7B10810C990E205427435450EA215D /* SteviaLayout-dummy.m */,
+				BB5C75F3D233D27DC3E06931C97D3F2D /* SteviaLayout-prefix.pch */,
+				0744224BEF35D640B2963999F901BA4E /* SteviaLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SteviaLayout";
+			sourceTree = "<group>";
+		};
+		CC15C0E67EDDE6CCBFCA808B1DA8F532 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B8EB92EDC1C0A016EA155DA05C96A2D5 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D6B9F75F43C4648D286B6EB49212B2FD /* Pods-DoloChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				0E4732BDD7844901B7FF76FEA9BBB63F /* Info.plist */,
+				C007DA5DAD4645C46430B6CB930D398F /* Pods-DoloChallenge.modulemap */,
+				83957AC9A158A5503FF66145EEA66795 /* Pods-DoloChallenge-acknowledgements.markdown */,
+				3D274F0A033D74F6ECE25E93282D0EF8 /* Pods-DoloChallenge-acknowledgements.plist */,
+				272D8403800C8B20DD022157A45D2E08 /* Pods-DoloChallenge-dummy.m */,
+				EBE1DDA0EF5C836898B87AA6EBB00504 /* Pods-DoloChallenge-frameworks.sh */,
+				8C5D13589B6AEE9C7EAC534E3E317ED7 /* Pods-DoloChallenge-resources.sh */,
+				EBA4A59EA385AABACE2E3EF1E7E25CFC /* Pods-DoloChallenge-umbrella.h */,
+				2E0B1819C7210091AFBA01612DD5E7BF /* Pods-DoloChallenge.debug.xcconfig */,
+				51671EFD027AC5F2A9107792B61C9557 /* Pods-DoloChallenge.release.xcconfig */,
+			);
+			name = "Pods-DoloChallenge";
+			path = "Target Support Files/Pods-DoloChallenge";
+			sourceTree = "<group>";
+		};
+		FD562834837516C1300516BCDFE81A5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				354CE4C173148601604AC4DFC1CD6625 /* Stevia.framework */,
+				CC15C0E67EDDE6CCBFCA808B1DA8F532 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6A81014478FBC447858F5B87B1B9641E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B192694E5E7DA214CD2F1C90A919DDEC /* YPImagePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF015EBA5657AD2964A17BF3972C8D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA78DEE0A7A180603CD244230094D97 /* SteviaLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3E27C27E92C3EE7028EBC16B0F18F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FA7173A44D685FF16698CBB867713F /* Pods-DoloChallenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3268A1340D2DDCFD54AA2DEA5CE356B0 /* Pods-DoloChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C5D361916CDE29514F45A33CD3E5FF6 /* Build configuration list for PBXNativeTarget "Pods-DoloChallenge" */;
+			buildPhases = (
+				865252DA0AA7F64D5563E911E1B1CD3C /* Sources */,
+				E7C79F533E788AF3C75FC1AD4D8C6A1B /* Frameworks */,
+				DC3E27C27E92C3EE7028EBC16B0F18F4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55C0D1E91C8B4C9D4EC171401C28C962 /* PBXTargetDependency */,
+				5369CFF571317BAB671289DEDEC8C402 /* PBXTargetDependency */,
+			);
+			name = "Pods-DoloChallenge";
+			productName = "Pods-DoloChallenge";
+			productReference = 75099A40164C201ABF2AB179FE677EAF /* Pods_DoloChallenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		364E212578137234ECA7F961815D5105 /* SteviaLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD7ABCB6B97F126636C694CE7FC40329 /* Build configuration list for PBXNativeTarget "SteviaLayout" */;
+			buildPhases = (
+				48C788AF4D14B7449495D15B9473640C /* Sources */,
+				33A4591E3FE9D647CC39DF60462E7CDC /* Frameworks */,
+				CAF015EBA5657AD2964A17BF3972C8D7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteviaLayout;
+			productName = SteviaLayout;
+			productReference = FEF1089E7E43B98288839757FED92E17 /* Stevia.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B44CEEA27D92D000528A521287B7E456 /* YPImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3B205AF1B15AAE36311C5AD408C1EF2 /* Build configuration list for PBXNativeTarget "YPImagePicker" */;
+			buildPhases = (
+				83E0C53834619C3280872B4ED6C8860C /* Sources */,
+				F31FF9957D1BCE82DFC8C99E21CB536F /* Frameworks */,
+				B80E4AE56A7192861CC80F5A9CE1224E /* Resources */,
+				6A81014478FBC447858F5B87B1B9641E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84BF4168A54940F41CBD92148F7468A8 /* PBXTargetDependency */,
+			);
+			name = YPImagePicker;
+			productName = YPImagePicker;
+			productReference = 76045E272683872446108984A860CF4F /* YPImagePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2B9DB88CB1CD580D12CB9A8A8756040A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3268A1340D2DDCFD54AA2DEA5CE356B0 /* Pods-DoloChallenge */,
+				364E212578137234ECA7F961815D5105 /* SteviaLayout */,
+				B44CEEA27D92D000528A521287B7E456 /* YPImagePicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B80E4AE56A7192861CC80F5A9CE1224E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F8342D6FECB85E7990A2A7C39D0E31C /* Assets.xcassets in Resources */,
+				0B3E6E8B54937C94F7C0863688C1BA02 /* en.lproj in Resources */,
+				25B9626ED2CD11614F1230D3BF7C963F /* es.lproj in Resources */,
+				3BD18179F25E7091BCF623167C681ED6 /* fr.lproj in Resources */,
+				057CB8C22FA33F6E0B3C7EC424784210 /* FSAlbumView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48C788AF4D14B7449495D15B9473640C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA54E973C517504D5AD373D10E79FCDE /* Stevia+Alignment.swift in Sources */,
+				1FC7B9157448AFAD662DF60142E3D709 /* Stevia+Center.swift in Sources */,
+				C3F599ABC4798DB14416EEF0F6C498A2 /* Stevia+Constraints.swift in Sources */,
+				A8E38C61E8C550BB6E19A0CE77089960 /* Stevia+Content.swift in Sources */,
+				3C31F0EE69CAA9AF632750E238F2B853 /* Stevia+DoubleDash.swift in Sources */,
+				AE8C91BB70AFC95005F96CCC7EEBF332 /* Stevia+Equation.swift in Sources */,
+				440A7F3B6BC4BEBC1BC8007836FC685A /* Stevia+Fill.swift in Sources */,
+				22214420215A89527E0B5275962E6432 /* Stevia+FlexibleMargin.swift in Sources */,
+				71EA4EB3D70AB2AB8D680475AB5A290D /* Stevia+GetConstraint.swift in Sources */,
+				5F5AA9148FB1AB674E43200C42C921E5 /* Stevia+Hierarchy.swift in Sources */,
+				FC5BE4399FBC371AE96621374446BF24 /* Stevia+Notifications.swift in Sources */,
+				D98AFFA0147A943D27BE89D0C09013C2 /* Stevia+Operators.swift in Sources */,
+				44D99966BFD34F42F57EDF4B763CD367 /* Stevia+Percentage.swift in Sources */,
+				6E61B9AB3EE202CCE6C05162C5D26794 /* Stevia+Position.swift in Sources */,
+				5D2E4EDEDF46F87FC8A9DEDBB3A53ED7 /* Stevia+Size.swift in Sources */,
+				2B62242E82FF78E52C3A52BF331DEF2A /* Stevia+Stacks.swift in Sources */,
+				8A6B7E89D045AAFE61A37A6B0B646988 /* Stevia+Style.swift in Sources */,
+				A5E3C2819179BD0985C0937D3DCA7026 /* Stevia+Tap.swift in Sources */,
+				A05E17F279AC0D038BF18C6B5FE8ACF4 /* SteviaLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E0C53834619C3280872B4ED6C8860C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1C49E67378B1E1874BC021B76B7DC6 /* Album.swift in Sources */,
+				191D1150CD47DEC68EB0B6C38F3FCE76 /* Filter.swift in Sources */,
+				E41786920BFB521BF1190F63531E9C37 /* FilterCollectionViewCell.swift in Sources */,
+				ED664FEA0AFCB9DD8E689D48D652ABE4 /* FilterPreview.swift in Sources */,
+				B7318AE11EFFAE69AC42E52AB0E96BB9 /* FiltersVC.swift in Sources */,
+				BAF1390AFCA986CD3E1AE1AD4E0B6D6C /* FiltersView.swift in Sources */,
+				C27DECA4C33D6666AD604FA27479B6EC /* FSAlbumVC.swift in Sources */,
+				27ACD2CFDFB4DBFF294DD7FA742C727C /* FSAlbumView.swift in Sources */,
+				05AAEF9665C80C8E18CC71CFE56419BD /* FSAlbumViewCell.swift in Sources */,
+				6795D17C6D39F2ACDB75964225449108 /* FSBottomPager.swift in Sources */,
+				3795DF87DA3707F59EC76FBB20CAAE23 /* FSCameraVC.swift in Sources */,
+				D020643E8CB325C1D37CC444D4AAD394 /* FSCameraView.swift in Sources */,
+				9738C00FB1E7BED87EFAA31FB3E8AAF6 /* FSConfiguration.swift in Sources */,
+				E6B48B127AF9B8B7A3182881BDFD96F6 /* FSGridView.swift in Sources */,
+				03B87D0D4D3A8316F1EE2916DEA3692F /* FSHelpers.swift in Sources */,
+				6A14635F3AAD0B8B780B29D43A8BA4E7 /* FSImageCropView.swift in Sources */,
+				7C235F60FDEE6C8FEB58C5DAA7BD82B6 /* FSVideoVC.swift in Sources */,
+				5F3B206E8761D0D6EEC43FE78B671C89 /* ImageCropViewContainer.swift in Sources */,
+				7D8E986DAA8188CD5783B0E89F9C0105 /* PHAssetCollection+Album.swift in Sources */,
+				02576BED1EFAC50B4501F0B8A2B99844 /* PhotoSaver.swift in Sources */,
+				174160FE6B1D9660246EEDFF7431760E /* PickerVC.swift in Sources */,
+				B054CBABEEC89F69DCC09768A8D48BB0 /* YPAlbumFolderCell.swift in Sources */,
+				17D5CEB5E5F8B59B00738370C2791E95 /* YPAlbumFolderSelectionVC.swift in Sources */,
+				D6BB96CFA27D30D14446DCF9B3B0801A /* YPAlbumFolderSelectionView.swift in Sources */,
+				621CBDDE62CFDABB284F8F236871549F /* YPImagePicker-dummy.m in Sources */,
+				3716B43D37996A1CEFBF04F17AAA1291 /* YPImagePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		865252DA0AA7F64D5563E911E1B1CD3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE58437C644BE5FF86A31A68339D11ED /* Pods-DoloChallenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5369CFF571317BAB671289DEDEC8C402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YPImagePicker;
+			target = B44CEEA27D92D000528A521287B7E456 /* YPImagePicker */;
+			targetProxy = C31C371087C2F1B129E88CDFB3ACE254 /* PBXContainerItemProxy */;
+		};
+		55C0D1E91C8B4C9D4EC171401C28C962 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SteviaLayout;
+			target = 364E212578137234ECA7F961815D5105 /* SteviaLayout */;
+			targetProxy = 9BDFFD6A338355D52AFEB42241382DDB /* PBXContainerItemProxy */;
+		};
+		84BF4168A54940F41CBD92148F7468A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SteviaLayout;
+			target = 364E212578137234ECA7F961815D5105 /* SteviaLayout */;
+			targetProxy = 501B7005EF0095A5D631F6C05F3407E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24AE43052E60CBC664016ED786132656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF190E60E09584D8B3436052A74663BA /* YPImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YPImagePicker/YPImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YPImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YPImagePicker/YPImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YPImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33AB421C8F5E2861EA3D7D6991DAC415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62241E602D9D30ED1CC6F22FBE1DDDE4 /* SteviaLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SteviaLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SteviaLayout/SteviaLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Stevia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		356E8EC381CB12038770D561C00F0C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51671EFD027AC5F2A9107792B61C9557 /* Pods-DoloChallenge.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DoloChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DoloChallenge/Pods-DoloChallenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DoloChallenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		474132A63655BA877390B9A1C708B8B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0B1819C7210091AFBA01612DD5E7BF /* Pods-DoloChallenge.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DoloChallenge/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DoloChallenge/Pods-DoloChallenge.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DoloChallenge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61E368F686D77B6B3A24B8B0E4CB2688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62241E602D9D30ED1CC6F22FBE1DDDE4 /* SteviaLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SteviaLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SteviaLayout/SteviaLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Stevia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D144F724433A09597E3476A57631255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B0D95D64658BF2E7553A4FEBFA3954B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF190E60E09584D8B3436052A74663BA /* YPImagePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YPImagePicker/YPImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YPImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YPImagePicker/YPImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YPImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D144F724433A09597E3476A57631255 /* Debug */,
+				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C5D361916CDE29514F45A33CD3E5FF6 /* Build configuration list for PBXNativeTarget "Pods-DoloChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474132A63655BA877390B9A1C708B8B4 /* Debug */,
+				356E8EC381CB12038770D561C00F0C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD7ABCB6B97F126636C694CE7FC40329 /* Build configuration list for PBXNativeTarget "SteviaLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E368F686D77B6B3A24B8B0E4CB2688 /* Debug */,
+				33AB421C8F5E2861EA3D7D6991DAC415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3B205AF1B15AAE36311C5AD408C1EF2 /* Build configuration list for PBXNativeTarget "YPImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0D95D64658BF2E7553A4FEBFA3954B1 /* Debug */,
+				24AE43052E60CBC664016ED786132656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

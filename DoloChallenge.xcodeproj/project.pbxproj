@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1319622044DAE800FB92F4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1319612044DAE800FB92F4 /* Location.swift */; };
+		0A1319652044F13800FB92F4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1319642044F13800FB92F4 /* DataService.swift */; };
+		0A1319682044FE2E00FB92F4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1319672044FE2E00FB92F4 /* ImageCache.swift */; };
 		0A566CE62044A9B200B97154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A566CE52044A9B200B97154 /* AppDelegate.swift */; };
-		0A566CE82044A9B200B97154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A566CE72044A9B200B97154 /* ViewController.swift */; };
+		0A566CE82044A9B200B97154 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A566CE72044A9B200B97154 /* HomeVC.swift */; };
 		0A566CEB2044A9B200B97154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A566CE92044A9B200B97154 /* Main.storyboard */; };
 		0A566CED2044A9B200B97154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A566CEC2044A9B200B97154 /* Assets.xcassets */; };
 		0A566CF02044A9B200B97154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A566CEE2044A9B200B97154 /* LaunchScreen.storyboard */; };
+		0A566CFD2044AB0400B97154 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A566CFB2044AA4800B97154 /* RoundedButton.swift */; };
+		0A566CFF2044AB6200B97154 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A566CFE2044AB6200B97154 /* GradientView.swift */; };
+		0A566D022044ACBA00B97154 /* Nunito in Resources */ = {isa = PBXBuildFile; fileRef = 0A566D012044ACB600B97154 /* Nunito */; };
+		0A58B7052044B57B0086F9BC /* NewPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58B7042044B57B0086F9BC /* NewPostVC.swift */; };
+		0A9FE1732045B3A900172833 /* UITextViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9FE1722045B3A900172833 /* UITextViewExt.swift */; };
+		0AAE4E9A2044C03900081B55 /* NearbyLocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE4E992044C03900081B55 /* NearbyLocationsVC.swift */; };
+		0AAE4E9C2044C51C00081B55 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAE4E9B2044C51C00081B55 /* LocationCell.swift */; };
+		4E5336F0900E96DD5FBC0ADA /* Pods_DoloChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA421F3031C867B3A44D6C3 /* Pods_DoloChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1319612044DAE800FB92F4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		0A1319642044F13800FB92F4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		0A1319672044FE2E00FB92F4 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		0A566CE22044A9B200B97154 /* DoloChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoloChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A566CE52044A9B200B97154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A566CE72044A9B200B97154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A566CE72044A9B200B97154 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0A566CEA2044A9B200B97154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A566CEC2044A9B200B97154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A566CEF2044A9B200B97154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A566CF12044A9B200B97154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A566CFB2044AA4800B97154 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		0A566CFE2044AB6200B97154 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0A566D012044ACB600B97154 /* Nunito */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Nunito; sourceTree = "<group>"; };
+		0A58B7042044B57B0086F9BC /* NewPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostVC.swift; sourceTree = "<group>"; };
+		0A9FE1722045B3A900172833 /* UITextViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExt.swift; sourceTree = "<group>"; };
+		0AAE4E992044C03900081B55 /* NearbyLocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyLocationsVC.swift; sourceTree = "<group>"; };
+		0AAE4E9B2044C51C00081B55 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		BFF62ECC78A86CD8C6293429 /* Pods-DoloChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoloChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoloChallenge/Pods-DoloChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		D16737D8692747D8095BB54B /* Pods-DoloChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoloChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoloChallenge/Pods-DoloChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		DEA421F3031C867B3A44D6C3 /* Pods_DoloChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoloChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5336F0900E96DD5FBC0ADA /* Pods_DoloChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1319632044F12900FB92F4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A1319642044F13800FB92F4 /* DataService.swift */,
+				0A1319672044FE2E00FB92F4 /* ImageCache.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		0A566CD92044A9B200B97154 = {
 			isa = PBXGroup;
 			children = (
 				0A566CE42044A9B200B97154 /* DoloChallenge */,
 				0A566CE32044A9B200B97154 /* Products */,
+				F006F92E50399017EE9C7B91 /* Pods */,
+				86F0EF554699FB152E8C2746 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +90,80 @@
 		0A566CE42044A9B200B97154 /* DoloChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0A9FE1712045B39800172833 /* Extensions */,
+				0A1319632044F12900FB92F4 /* Services */,
+				0A566D002044AC9900B97154 /* Fonts */,
+				0A566CF92044A9DF00B97154 /* Model */,
+				0A566CF82044A9DC00B97154 /* View */,
+				0A566CF72044A9D100B97154 /* Controller */,
 				0A566CE52044A9B200B97154 /* AppDelegate.swift */,
-				0A566CE72044A9B200B97154 /* ViewController.swift */,
 				0A566CE92044A9B200B97154 /* Main.storyboard */,
 				0A566CEC2044A9B200B97154 /* Assets.xcassets */,
 				0A566CEE2044A9B200B97154 /* LaunchScreen.storyboard */,
 				0A566CF12044A9B200B97154 /* Info.plist */,
 			);
 			path = DoloChallenge;
+			sourceTree = "<group>";
+		};
+		0A566CF72044A9D100B97154 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A566CE72044A9B200B97154 /* HomeVC.swift */,
+				0A58B7042044B57B0086F9BC /* NewPostVC.swift */,
+				0AAE4E992044C03900081B55 /* NearbyLocationsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A566CF82044A9DC00B97154 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A566CFB2044AA4800B97154 /* RoundedButton.swift */,
+				0A566CFE2044AB6200B97154 /* GradientView.swift */,
+				0AAE4E9B2044C51C00081B55 /* LocationCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A566CF92044A9DF00B97154 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A1319612044DAE800FB92F4 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A566D002044AC9900B97154 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0A566D012044ACB600B97154 /* Nunito */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0A9FE1712045B39800172833 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A9FE1722045B3A900172833 /* UITextViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86F0EF554699FB152E8C2746 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA421F3031C867B3A44D6C3 /* Pods_DoloChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F006F92E50399017EE9C7B91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D16737D8692747D8095BB54B /* Pods-DoloChallenge.debug.xcconfig */,
+				BFF62ECC78A86CD8C6293429 /* Pods-DoloChallenge.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A566CF42044A9B200B97154 /* Build configuration list for PBXNativeTarget "DoloChallenge" */;
 			buildPhases = (
+				C932BC11E65FC342FC12F4DE /* [CP] Check Pods Manifest.lock */,
 				0A566CDE2044A9B200B97154 /* Sources */,
 				0A566CDF2044A9B200B97154 /* Frameworks */,
 				0A566CE02044A9B200B97154 /* Resources */,
+				BCECEB90F03E2B004ACD7683 /* [CP] Embed Pods Frameworks */,
+				DF9C3B38FC816520D507EC5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,18 +231,76 @@
 				0A566CF02044A9B200B97154 /* LaunchScreen.storyboard in Resources */,
 				0A566CED2044A9B200B97154 /* Assets.xcassets in Resources */,
 				0A566CEB2044A9B200B97154 /* Main.storyboard in Resources */,
+				0A566D022044ACBA00B97154 /* Nunito in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BCECEB90F03E2B004ACD7683 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoloChallenge/Pods-DoloChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C932BC11E65FC342FC12F4DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF9C3B38FC816520D507EC5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoloChallenge/Pods-DoloChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A566CDE2044A9B200B97154 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A566CE82044A9B200B97154 /* ViewController.swift in Sources */,
+				0A1319682044FE2E00FB92F4 /* ImageCache.swift in Sources */,
+				0A1319652044F13800FB92F4 /* DataService.swift in Sources */,
+				0A566CE82044A9B200B97154 /* HomeVC.swift in Sources */,
 				0A566CE62044A9B200B97154 /* AppDelegate.swift in Sources */,
+				0A1319622044DAE800FB92F4 /* Location.swift in Sources */,
+				0A9FE1732045B3A900172833 /* UITextViewExt.swift in Sources */,
+				0A58B7052044B57B0086F9BC /* NewPostVC.swift in Sources */,
+				0A566CFF2044AB6200B97154 /* GradientView.swift in Sources */,
+				0AAE4E9C2044C51C00081B55 /* LocationCell.swift in Sources */,
+				0AAE4E9A2044C03900081B55 /* NearbyLocationsVC.swift in Sources */,
+				0A566CFD2044AB0400B97154 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,31 +435,37 @@
 		};
 		0A566CF52044A9B200B97154 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16737D8692747D8095BB54B /* Pods-DoloChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K2UE6W99P6;
 				INFOPLIST_FILE = DoloChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.DoloChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0A566CF62044A9B200B97154 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF62ECC78A86CD8C6293429 /* Pods-DoloChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K2UE6W99P6;
 				INFOPLIST_FILE = DoloChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.DoloChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

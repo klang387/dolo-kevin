@@ -1,0 +1,6 @@
+framework module Pods_DoloChallenge {
+  umbrella header "Pods-DoloChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

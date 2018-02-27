@@ -1,0 +1,15 @@
+PODS:
+  - SteviaLayout (4.0.0)
+  - YPImagePicker (2.0.1):
+    - SteviaLayout (~> 4.0.0)
+
+DEPENDENCIES:
+  - YPImagePicker
+
+SPEC CHECKSUMS:
+  SteviaLayout: 2d6b6d7e9554fa7b2c7c2aba12337b23cf897123
+  YPImagePicker: 02c882c4447f229c3a92782572e474252b5bf18e
+
+PODFILE CHECKSUM: c4be8d7d225fc8208ce79b3f0188025f03f2ce94
+
+COCOAPODS: 1.2.1
